@@ -1,0 +1,9 @@
+FROM ubuntu:latest
+RUN apt-get update && apt-get install -y wget && rm -rf /var/lib/apt/lists/*
+
+# For Light weight image
+# FROM alpine:latest
+# RUN apk add --no-cache wget
+
+# RUN apk add --no-cache wget: This line installs wget using Alpine’s package manager, apk.
+# The --no-cache option is used to keep the image size small by not caching the index of available packages

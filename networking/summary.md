@@ -1,0 +1,3 @@
+# Summary Notes for understanding concepts
+
+1. pseudo-TTYs are crucial in providing terminal-like functionality for software applications, enabling them to interact with users or other applications in a way that mimics the behavior of hardware terminals. The master endpoint is used by a networking application, while the slave endpoint is used by the shell or the user’s process to read and write terminal data.

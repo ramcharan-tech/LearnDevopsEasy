@@ -1,0 +1,4 @@
+FROM ubuntu:23.10
+RUN apt-get update && apt-get install tree -y
+# BASE IMAGE SIZE 71.2 MB
+# docker build --pull --rm -f "docker\dockerfiles\Debug" -t debug:beta "docker\dockerfiles" 

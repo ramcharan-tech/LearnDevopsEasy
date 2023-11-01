@@ -1,0 +1,7 @@
+{
+    "experimental": true,
+    "features": {
+      "buildkit": false
+    }
+  }
+  

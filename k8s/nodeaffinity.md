@@ -1,0 +1,15 @@
+It seems that you are having trouble scheduling your pod on any of the available nodes due to various constraints. Here are some possible solutions that might help you:
+
+- If your pod uses persistent volumes that are in different zones, you might get the error "node(s) had volume node affinity conflict". This means that the pod cannot be scheduled on a node that is not in the same zone as the volume. To fix this, you can either create a storage class for a single zone and use it in your persistent volume claim¹, or use a regional persistent volume that is replicated across two zones².
+- If your pod requires more memory or CPU than the available nodes can offer, you might get the error "Insufficient memory" or "Insufficient CPU". This means that the pod cannot be scheduled on a node that does not have enough resources to meet the pod's request. To fix this, you can either reduce the resource request of your pod³, or add more nodes with higher capacity to your cluster⁴.
+- If your pod has a pod anti-affinity rule that prevents it from co-locating with other pods, you might get the error "node(s) didn't match pod anti-affinity rules". This means that the pod cannot be scheduled on a node that already has pods that match the anti-affinity criteria. To fix this, you can either relax the pod anti-affinity rule of your pod⁵, or scale down the pods that cause the conflict.
+- If your pod is eligible for preemption, but there are no lower-priority pods that can be evicted to make room for it, you might get the error "No preemption victims found for incoming pod" or "Preemption is not helpful for scheduling". This means that the pod cannot be scheduled on a node that has enough resources, but they are occupied by higher-priority or equal-priority pods. To fix this, you can either increase the priority of your pod, or wait for some pods to terminate naturally.
+
+I hope this helps you resolve your scheduling issue. If you need more information, you can check out the official Kubernetes documentation or search for more answers on Stack Overflow.
+
+Source: Conversation with Bing, 8/29/2023
+(1) Kubernetes Pod Warning: 1 node (s) had volume node affinity conflict. https://stackoverflow.com/questions/51946393/kubernetes-pod-warning-1-nodes-had-volume-node-affinity-conflict.
+(2) kubernetes - node(s) had volume node affinity conflict - Stack Overflow. https://stackoverflow.com/questions/64484165/nodes-had-volume-node-affinity-conflict.
+(3) How to deploy pod with local storage in kubernetes (microk8s) without .... https://stackoverflow.com/questions/65974049/how-to-deploy-pod-with-local-storage-in-kubernetes-microk8s-without-node-affin.
+(4) Taints and Tolerations | Kubernetes. https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/.
+(5) Node Affinity: Key Concepts, Examples, and Troubleshooting - Komodor. https://komodor.com/learn/node-affinity/.

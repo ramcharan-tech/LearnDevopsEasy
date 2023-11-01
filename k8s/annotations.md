@@ -1,0 +1,1 @@
+kubectl.kubernetes.io/default-container=container-2  --> add default container

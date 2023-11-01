@@ -1,0 +1,16 @@
+# Useful Links
+
+1. [DevopsCube RoadMap](https://devopscube.com/learn-kubernetes-complete-roadmap/)
+2. [Nana RoadMap](https://www.techworld-with-nana.com/post/kubernetes-roadmap)
+3. [techiescamp Roadmap](https://github.com/techiescamp/kubernetes-learning-path)
+4. [Awesome k8s tools and resources](https://github.com/tomhuang12/awesome-k8s-resources)
+5. [Awesome k8s sources](https://github.com/ramitsurana/awesome-kubernetes)
+6. [kubetools](https://github.com/collabnix/kubetools)
+7. [Glossary](https://kubernetes.io/docs/reference/glossary/?all=true)
+8. [bluematador Glossary](https://www.bluematador.com/learn/kubernetes-glossary)
+9. [appvia Glossary](https://www.appvia.io/blog/kubernetes-glossary/)
+10. [ALL Glossary](https://sematext.com/glossary/)
+11. [debug](https://thenewstack.io/living-with-kubernetes-12-commands-to-debug-your-workloads/)
+12. [blog](https://k21academy.com/category/docker-kubernetes/)
+13. [dev.to blog](https://dev.to/t/kubernetes)
+14. [pod eviction](https://sysdig.com/blog/kubernetes-pod-evicted/)
