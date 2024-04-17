@@ -18,3 +18,6 @@ wsl --export Ubuntu20.04 c:\wsl-backup\Ubuntu2004.tar
 wsl –import <Image Name you choose> <Directory to store and run the image> <Directory location of the exported .tar file>
 wsl -d <WSL imported image name> --> to run specific wsl linux distribution
 wsl --setdefault <DISTRO-NAME>
+wsl --shutdown
+
+<!-- ntoskrnl.exe (Windows NT Kernel) -->
