@@ -14,3 +14,7 @@
 12. [blog](https://k21academy.com/category/docker-kubernetes/)
 13. [dev.to blog](https://dev.to/t/kubernetes)
 14. [pod eviction](https://sysdig.com/blog/kubernetes-pod-evicted/)
+15. [cka lab 25 tasks](https://github.com/devopshubproject/cka-lab)
+16. [Kubeadm setup](https://devopscube.com/setup-kubernetes-cluster-kubeadm/)
+17. [150 interview questions](https://github.com/sv222/certified-kubernetes-administrator-CKA-exam-preparation)
+18. [Top Krew plugins](https://alex-moss.medium.com/down-with-the-krew-my-favourite-kubectl-plugins-279d8d2d5640)

@@ -22,7 +22,13 @@ helm history <release> --namespace <namespace>
 
 helm rollback <release> <revision> --namespace <namespace>
 
-helm repo update
 
-helm search repo  promtail
+
+Charts:
+
+ helm dependency build
+ helm repo update
+ helm search repo  promtail
+ helm dependency update
+
 ```

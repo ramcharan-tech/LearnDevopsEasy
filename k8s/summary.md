@@ -1,5 +1,10 @@
 # Key concepts
 
+WSL gets aws profiles and kubectl clusters directly from windows. If not link it ```ln -s /mnt/c/Users/<your-windows-username>/.aws ~/.aws``` , ```ln -s /mnt/c/Users/<your-windows-username>/.kube ~/.kube``` , export variable ```export KUBECONFIG=/mnt/c/Users/<your-windows-username>/.kube/config``` and reload profile ```source ~/.profile```
+
+
+## Arguments
+
 1. The command field in Kubernetes corresponds to the EntryPoint field in Docker
 the args field in Kubernetes corresponds to the Cmd field in Docker
 For example : kubectl run busybox --image=busybox --restart=Never -o yaml --dry-run -- /bin/sh -c 'echo hello;sleep 3600'
@@ -18,5 +23,6 @@ If you supply a command and args, the default Entrypoint and the default Cmd def
 In multi-container pods, all containers share the same network namespace (communicate via localhost), IPC namespace (shared interprocess communication), and UTS namespace (same hostname)2. However, by default, the PID namespace is not shared, although Kubernetes provides options to enable process sharing between containers inside the pod using shareProcessNamespace option.
 
 ## Keywords
+
 klog
 stern,kubetail,kail

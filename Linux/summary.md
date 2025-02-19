@@ -23,6 +23,8 @@
       fi 
       PATH=$PATH:$HOME/bin export PATH```
 
-# LINKS
+## LINKS
 
 1. <https://www.baeldung.com/linux/full_archive>
+1. [Auth htpasswd](https://medium.com/@athulmve/basic-authentication-for-ingress-host-9abeef927902#:~:text=To%20add%20Basic%20Authentication%20to,user%20with%20your%20user%20name.)
+1. [JQ Basics blog](https://earthly.dev/blog/jq-select/)

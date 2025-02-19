@@ -4,7 +4,7 @@
 2. reset
 # or
 tset
-3. exec bash
+3. exec bash (only worked for me)
 # or if you want to reload your bash shell with login option
 exec bash --login
 

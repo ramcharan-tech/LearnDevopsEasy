@@ -1,3 +1,7 @@
+# Arguments in a container
+
+```yaml
+
 apiVersion: v1
 kind: Pod
 metadata:
@@ -6,8 +10,9 @@ spec:
   containers:
   - name: my-container
     image: my-image
-    command: ["/bin/bash"]
     args: ["-c", "echo Hello, World!"]
+    command: ["/bin/bash"]
+```
 
 In this example, the args field specifies the arguments that should be passed to the /bin/bash command when the container starts
 

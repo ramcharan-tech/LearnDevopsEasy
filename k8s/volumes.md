@@ -1,3 +1,9 @@
+VolumeClaimTemplates: (statefulset Outer spec level) --> metadata.name (volume name)
+  Volumes: (statefulset inner spec level) --> name (volume name), configmap name
+    VolumeMounts: (container level) --> name (volume name), mountPath (path in the pod mapped to)
+
+
+
 Factors: Accessmodes, AZ's, Storage systems
 ReadWriteOnce: The volume can be mounted as read-write by a single node like EBS
 ReadOnlyMany: The volume can be mounted read-only by many nodes1.

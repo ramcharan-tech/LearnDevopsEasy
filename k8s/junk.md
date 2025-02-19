@@ -1,3 +1,5 @@
+KUBECONFIG env variable: set KUBECONFIG=C:\Users\YourUserName\.kube\config
+
 topologySpreadConstraints: This is a feature in Kubernetes that allows you to specify how pods should be spread across nodes based on certain rules or constraints1. This can help to achieve high availability and efficient resource utilization1. In your code:
 
 maxSkew: 1: This describes the degree to which Pods may be unevenly distributed. It must be greater than zero1.

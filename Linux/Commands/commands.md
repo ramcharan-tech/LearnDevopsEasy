@@ -12,3 +12,4 @@
    sudo rm /usr/local/bin/<executable_name>
    ln -s /new/shared/location/<executable_name> /usr/local/bin/<executable_name>
 7. ls -l --> to check the permissions
+

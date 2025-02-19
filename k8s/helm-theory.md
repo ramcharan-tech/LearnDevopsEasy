@@ -1,0 +1,1 @@
+repository: "file://../loki-distributed" --> to reference local helm chart
