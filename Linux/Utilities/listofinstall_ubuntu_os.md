@@ -1,0 +1,12 @@
+artha
+flatpak
+gnome-shell-extension-manager
+gnome-shell-extensions
+gnome-tweaks
+linux-generic
+microsoft-edge-stable
+net-tools
+openssh-server
+powertop
+transmission-gtk
+xrdp
