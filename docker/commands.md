@@ -13,3 +13,12 @@ Docker removes the intermediate container.
 **reposiory name must be lower case**
 ```docker image prune --force --filter='label=beta'```
 docker run -it -rm nginx --> -rm to remove the container automatically after it exits
+
+``` yaml
+extra_hosts:
+    - "host.docker.internal:host-gateway" 
+```
+
+This line is used to add entries to the container’s /etc/hosts file, allowing you to map hostnames to IP addresses.
+
+In this case, host.docker.internal is a special DNS name that resolves to the internal IP address used by the host. This can be useful for connecting from a Docker container to a service running on the host machine.
