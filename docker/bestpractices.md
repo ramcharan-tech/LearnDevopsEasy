@@ -29,7 +29,7 @@ before ENTRYPOINT. Ensure COPY uses --chown=app:app.
 Why: Docker caches layers from top to bottom. A change to any layer invalidates all layers below it. COPY . . before dotnet restore means every
 source code change re-downloads all packages.
 Rule: Copy only what's needed for the next RUN step first (e.g., *.csproj → restore → COPY . . → publish). Put infrequently-changing steps (OS
-packages, tool installs) near the top.
+packages, tool installs) near the top. **Order layers from least-frequently-changing to most-frequently-changing.**
 
 6. Use a .dockerignore file
 
@@ -71,3 +71,5 @@ Verification
 3. docker inspect demo:latest | grep -A5 Healthcheck — verify HEALTHCHECK is present
 4. docker run demo:latest whoami — should return app, not root
 5. docker history demo:latest — runtime stage should show no SDK, no NuGet cache layers
+
+
